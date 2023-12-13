@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+   <link rel="stylesheet" href="style.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body style="background-image:url(cal.avif);" class="bg">
+    <div class="p">
+        <div>
+            <input type="text" id="display"  class="q rounded-3">
+        </div>
+<div id="b1">
+    <div  class="btn btn-group gap-3" role="group">
+    <button  class="btn btn-danger btn-lg rounded-1 fw-bold AC" onclick="allclear()">AC</button>
+    <button type="button" value="DEL" class="btn btn-dark btn-lg rounded-1 fw-bold AC" id="display" onclick="remove()">DEL</button>
+    </div>
+
+    <div class="btn btn-group gap-3" role="group">
+        <button type="button"value="7" class="btn btn-light btn-lg rounded-3 fw-bold btn1" onclick="display('7')">7</button>
+        <button type="button" value="8"class="btn btn-light btn-lg rounded-3 fw-bold btn1" onclick="display('8')">8</button>
+        <button type="button"value="9" class="btn btn-light btn-lg rounded-3 fw-bold btn1" onclick="display('9')">9</button>
+</div>
+<button type="button" value="÷" type="button" class="btn btn-dark btn-lg rounded-3 fw-bold btn1 color2" onclick="display('/')">/</button>
+
+<div class="btn btn-group gap-3" role="group">
+    <button type="button" value="4"class="btn btn-light btn-lg rounded-3 fw-bold btn1"onclick="display('4')">4</button>
+    <button type="button" value="5" class="btn btn-light btn-lg rounded-3 fw-bold btn1"onclick="display('5')">5</button>
+    <button type="button" value="6" class="btn btn-light btn-lg rounded-3 fw-bold btn1"onclick="display('6')">6</button>
+</div>
+<button type="button" value="*" class="btn btn-dark btn-lg rounded-3 fw-bold btn1 color2" onclick="display('*')">*</button>
+
+<div class="btn btn-group gap-3" role="group">
+    <button type="button" value="1" class="btn btn-light btn-lg rounded-3 fw-bold btn" onclick="display('1')">1</button>
+    <button  type="button" value="2"class="btn btn-light btn-lg rounded-3 fw-bold btn1" onclick="display('2')">2</button>
+    <button type="button"value="3" class="btn btn-light btn-lg rounded-3 fw-bold btn1" onclick="display('3')">3</button>
+</div>
+<button type="button" value="–" class="btn btn-dark btn-lg rounded-3 fw-bold btn1 color2" onclick="display('-')">-</button>
+
+<div class="btn btn-group gap-3" role="group">
+ <button type="button" value="0" class="btn btn-light btn-lg rounded-3 fw-bold btn1" onclick="('0')">0</button>
+    <button type="button" value="." class="btn btn-light btn-lg rounded-3 fw-bold btn1" onclick="('.')">.</button>
+    <button type="button" value="+"class="btn btn-light btn-lg rounded-3 fw-bold btn1 color" onclick="('+')">+</button>
+</div>
+<button type="button" value="=" class="btn btn-warning btn-lg rounded-2 fw-bold btn1 color" onclick="calculator()">=</button>
+ </div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
